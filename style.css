@@ -23,6 +23,17 @@ body{
 }
 button{
   align-items: center;
+  font-family: "Eater";
+  background-color: black;
+  color : orange;
+  box-shadow: inset orange;
+
+}
+button:hover{
+  background-color: orange;
+  color:black;
+  box-shadow: inset black;
+
 }
 .avatar{
   position:relative;
@@ -61,6 +72,9 @@ button{
 h1{
    font-family: "Eater";
    color: orange;
-   margin: 20px;
+   margin-left: 30px;
+   
 }
+
+
 

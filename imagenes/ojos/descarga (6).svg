@@ -1,0 +1,5 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- ojos redondos (pupilas negras) -->
+  <circle cx="80" cy="105" r="4" fill="#000"></circle>
+  <circle cx="120" cy="105" r="4" fill="#000"></circle>
+</svg>

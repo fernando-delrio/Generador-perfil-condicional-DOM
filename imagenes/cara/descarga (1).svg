@@ -1,0 +1,7 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- cabeza -->
+  <circle cx="100" cy="110" r="60" fill="#ededed"></circle>
+  <!-- orejas -->
+  <polygon points="55,60 80,40 85,80" fill="#ededed"></polygon>
+  <polygon points="145,60 120,40 115,80" fill="#ededed"></polygon>
+</svg>

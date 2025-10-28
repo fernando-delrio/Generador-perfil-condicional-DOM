@@ -1,0 +1,6 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- lazo lateral -->
+  <rect x="132" y="98" width="8" height="18" fill="#de6291" transform="rotate(20 136 106)"></rect>
+  <polygon points="140,102 165,96 160,110" fill="#de6291"></polygon>
+  <polygon points="140,112 163,124 150,128" fill="#de6291"></polygon>
+</svg>

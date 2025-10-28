@@ -2,45 +2,42 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Avatar Gato</title>
+  <title>Avatar Builder</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h2></h2>
+<div class="avatar-container">
 
-<!-- Avatar -->
-<div class="avatar theme--white">
-  <div class="head eyes-root eyes--round">
-    <div class="ear left"></div>
-    <div class="ear right"></div>
-    
-    
-    <div class="eye left"></div>
-    <div class="eye right"></div>
-
-    <div class="nose"></div>
-    <div class="mouth mouth--smile"></div>
-    <div class="hat hat--none"></div>
+  <!-- CONTENEDOR DEL AVATAR -->
+  <div class="avatar">
+    <img id="sombrero" class="layer" src="./imagenes/sombrero/descarga (12).svg">
+    <img id="cara" class="layer" src="./imagenes/cara/descarga (1).svg">
+    <img id="ojos" class="layer" src="./imagenes/ojos/descarga (6).svg">
+    <img id="boca" class="layer" src="./imagenes/boca/descarga (9).svg">
   </div>
 
-  <div class="body">
-  <div class="arm left"></div>
-  <div class="arm right"></div>
+  <!-- BOTONES DE CONTROL -->
+  <div class="controls">
+    
+    <h3>Cara</h3>
+    <button onclick="cambiarCara('descarga (1)')">Cara 1</button>
+    <button onclick="cambiarCara('descarga (2)')">Cara 2</button>
+    <button onclick="cambiarCara('descarga (3)')">Cara 3</button>
 
-  <div class="leg left"></div>
-  <div class="leg right"></div>
-</div>
+    <h3>Ojos</h3>
+    <button onclick="cambiarOjos('descarga (6)')">Ojos 1</button>
+    <button onclick="cambiarOjos('descarga (7)')">Ojos 2</button>
+    <button onclick="cambiarOjos('descarga (8)')">Ojos 3</button>
 
-<!-- Controles -->
-<div class="controls">
-  <label>  Tipo de ojos:
-    <select id="ui_eyes">
-      <option value="round">Ojos redondos</option>
-      <option value="droopy">Ojos caídos</option>
-      <option value="border">Ojos con borde</option>
-    </select>
-  </label>
+    <h3>Boca</h3>
+    <button onclick="cambiarBoca('descarga (9)')">Boca 1</button>
+    <button onclick="cambiarBoca('descarga (10)')">Boca 2</button>
+    <button onclick="cambiarBoca('descarga (11)')">Boca 3</button>
+
+
+  </div>
+
 </div>
 
 <script src="app.js"></script>

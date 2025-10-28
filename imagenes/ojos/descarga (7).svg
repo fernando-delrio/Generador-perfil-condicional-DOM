@@ -1,0 +1,7 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- párpado blanco con pupila -->
+  <path d="M70,100 q10,-8 20,0 v6 h-20z" fill="#fff" stroke="#000" stroke-width="1"></path>
+  <ellipse cx="80" cy="103" rx="5.5" ry="3" fill="#000"></ellipse>
+  <path d="M110,100 q10,-8 20,0 v6 h-20z" fill="#fff" stroke="#000" stroke-width="1"></path>
+  <ellipse cx="120" cy="103" rx="5.5" ry="3" fill="#000"></ellipse>
+</svg>

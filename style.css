@@ -26,13 +26,17 @@ button{
   font-family: "Eater";
   background-color: black;
   color : orange;
-  box-shadow: inset orange;
+  box-shadow: 3px 3px 8px rgba(255,165,0,0.6);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
 
 }
 button:hover{
   background-color: orange;
   color:black;
   box-shadow: inset black;
+  box-shadow: 5px 5px 15px rgba(255,140,0,0.8); 
+  transform: translateY(-2px);              
 
 }
 .avatar{

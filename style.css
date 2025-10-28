@@ -1,0 +1,143 @@
+body{
+  background:#222;
+  color:white;
+  font-family:Arial;
+  padding:20px;
+}
+
+.avatar{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin-bottom:20px;
+}
+
+/* Fur color by theme */
+.avatar.theme--white  { --fur:#ededed; }
+.avatar.theme--orange { --fur:#e8813c; }
+.avatar.theme--brown  { --fur:#8a5846; }
+.avatar.theme--gray   { --fur:#c2c2c2; }
+.avatar.theme--blue   { --fur:#3c4259; }
+
+.head { background:#ededed }
+.body { background:#ededed }
+.leg { background:#ededed }
+.arm { background:#ededed }
+
+.head{
+  width:160px;
+  height:160px;
+  border-radius:50%;
+  position:relative;
+}
+
+/* Ears */
+.ear{
+  width:0;height:0;
+  position:absolute;
+  top:-25px;
+  border-left:35px solid transparent;
+  border-right:35px solid transparent;
+  border-bottom:55px solid var(--fur);
+}
+.ear.left{ left:10px; transform:rotate(-10deg); }
+.ear.right{ right:10px; transform:rotate(10deg); }
+
+/* Base eye positioning */
+.eyes-root .eye{
+  background:#000;
+  position:absolute;
+  top:60px;
+  width:10px;
+  height:10px;
+  border-radius:50%;
+}
+.eye.left{ left:50px; }
+.eye.right{ right:50px; }
+
+/* Eye variants */
+.eyes--round .eye{
+  width:12px; height:12px;
+}
+
+.eyes--droopy .eye{
+  width:26px;height:14px;
+  background:#fff; border-radius:0 0 999px 999px;
+}
+.eyes--droopy .eye::before{
+  content:"";
+  display:block;
+  width:14px;height:8px;
+  background:#000;
+  border-radius:0 0 999px 999px;
+  margin:auto; margin-top:0;
+}
+
+.eyes--border .eye{
+  width:16px;height:16px;
+  background:#fff;
+  border:3px solid #000;
+  border-radius:50%;
+}
+
+/* Nose & mouth */
+.nose{
+  width:18px;height:12px;
+  background:#000;
+  border-radius:50%;
+  position:absolute; top:95px; left:50%; transform:translateX(-50%);
+}
+
+.mouth{
+  width:40px; height:16px;
+  border:3px solid #000;
+  border-top:none;
+  border-radius:0 0 50px 50px;
+  position:absolute; top:115px; left:50%; transform:translateX(-50%);
+}
+
+/* Body & legs */
+.body{
+  width:120px;height:100px;
+  margin-top:-10px;
+  border-radius:60px;
+  position:relative;
+}
+
+.arm{
+  width:30px;height:25px;border-radius:999px;
+  background:var(--fur);
+  position:absolute; top:20px;
+}
+.arm.left{ left:-10px; }
+.arm.right{ right:-10px; }
+
+.leg{
+  width:35px;
+  height:25px;
+  background:var(--fur);
+  border-radius:999px;
+  position:absolute;
+  bottom:-10px;
+}
+
+.leg.left{
+  left:25px;
+}
+
+.leg.right{
+  right:25px;
+}
+.controls{
+  margin-top:40px; /* baja el input */
+  display:flex;
+  justify-content:center;
+  font-size:1.2rem;
+}
+
+.controls select{
+  margin-left:8px;
+  padding:5px;
+  font-size:1rem;
+  border-radius:6px;
+}

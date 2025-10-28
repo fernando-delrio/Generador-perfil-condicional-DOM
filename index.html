@@ -4,14 +4,22 @@
   <meta charset="UTF-8">
   <title>Avatar Builder</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=BBH+Sans+Bartle&family=Barrio&family=Borel&family=Delius+Swash+Caps&family=Eater&family=Fascinate+Inline&family=Honk&family=Major+Mono+Display&family=Manrope:wght@200..800&family=Michroma&family=Miltonian+Tattoo&family=Rubik+Bubbles&family=Yarndings+20&display=swap" rel="stylesheet">
 </head>
 <body>
+
+<div class="header">
+    <h1 >Customize your baby Pumpking</h1>
+</div>
+
 
 <div class="avatar-container">
 
   <!-- CONTENEDOR DEL AVATAR -->
   <div class="avatar">
-    <img id="sombrero" class="layer" src="./imagenes/sombrero/descarga (12).svg">
+    <img id="sombrero" class="layer" src="./imagenes/sombreros/witch-hat.PNG">
     <img id="cara" class="layer" src="./imagenes/cara/descarga (1).svg">
     <img id="ojos" class="layer" src="./imagenes/ojos/descarga (6).svg">
     <img id="boca" class="layer" src="./imagenes/boca/descarga (9).svg">
@@ -34,7 +42,15 @@
     <button onclick="cambiarBoca('descarga (9)')">Boca 1</button>
     <button onclick="cambiarBoca('descarga (10)')">Boca 2</button>
     <button onclick="cambiarBoca('descarga (11)')">Boca 3</button>
+   
 
+     <h3>Sombrero</h3>
+    <button onclick="cambiarSombrero('viking-hat')"> Vikingo </button>
+    <button onclick="cambiarSombrero('txapela-hat')">Txapela</button>
+    <button onclick="cambiarSombrero('pirate-hat')">Pirata</button>
+    <button onclick="cambiarSombrero('cowboy-hat')">Vaquero</button>
+    <button onclick="cambiarSombrero('duende-hat')">Duende </button>
+    <button onclick="cambiarSombrero('witch-hat')">Bruja</button>
 
   </div>
 

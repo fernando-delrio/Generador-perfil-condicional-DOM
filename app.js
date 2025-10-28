@@ -13,8 +13,9 @@ const cambiarOjos = (v) => {
 
 const cambiarBoca = (v) => {
   boca.src = `./imagenes/boca/${v}.svg`;
+  ;
 };
 
 const cambiarSombrero = (v) => {
-  sombrero.src = `./imagenes/sombrero/${v}.svg`;
+  sombrero.src = `./imagenes/sombreros/${v}.PNG`;
 };

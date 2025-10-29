@@ -41,16 +41,35 @@ button:hover{
 }
 .avatar{
   position:relative;
-  width:300px;
-  height:300px;
+  width:500px;
+  height:500px;
   z-index: 1;
+  margin-top: 30px;
 }
-
+.cara-features{
+  top: -80px;
+  position:relative;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  z-index: 3;
+}
+.accesorios{
+  top: -500px;
+  position:relative;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  z-index: 4;
+ 
+}
 .layer{
+ 
   position:absolute;
   width:100%;
   height:100%;
   object-fit:contain;
+ 
 }
 
 .controls button{
@@ -79,6 +98,7 @@ h1{
    margin-left: 30px;
    
 }
+
 
 
 

@@ -4,7 +4,7 @@ let boca = document.querySelector('#boca');
 let sombrero = document.querySelector('#sombrero');
 
 const cambiarCara = (v) => {
-  cara.src = `./imagenes/cara/${v}.svg`;
+  cara.src = `./imagenes/calabaza/${v}.PNG`;
 };
 
 const cambiarOjos = (v) => {

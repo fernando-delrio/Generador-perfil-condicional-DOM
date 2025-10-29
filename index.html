@@ -19,21 +19,30 @@
 
   <!-- CONTENEDOR DEL AVATAR -->
   <div class="avatar">
-    <img id="sombrero" class="layer" src="./imagenes/sombreros/witch-hat.PNG">
-    <img id="cara" class="layer" src="./imagenes/cara/descarga (1).svg">
+    <div class="base-layer">
+      <img id="cara" class="layer" src="./imagenes/calabaza/Naranja.PNG">
+    </div>
+    <div class="cara-features">
     <img id="ojos" class="layer" src="./imagenes/ojos/descarga (6).svg">
     <img id="boca" class="layer" src="./imagenes/boca/descarga (9).svg">
+    </div>
+    <div class="accesorios">
+      <img id="sombrero" class="layer" src="./imagenes/sombreros/witch-hat.PNG">
+    </div>
   </div>
 
   <!-- BOTONES DE CONTROL -->
   <div class="controls">
     
     <h3>Cara</h3>
-    <button onclick="cambiarCara('descarga (1)')">Cara 1</button>
-    <button onclick="cambiarCara('descarga (2)')">Cara 2</button>
-    <button onclick="cambiarCara('descarga (3)')">Cara 3</button>
+    <button onclick="cambiarCara('Naranja')">Cara 1</button>
+    <button onclick="cambiarCara('Azul')">Cara 2</button>
+    <button onclick="cambiarCara('Morado')">Cara 3</button>
+    <button onclick="cambiarCara('Verde')">Cara 2</button>
+    
 
-    <h3>Ojos</h3>
+
+    <h3 class="ojos">Ojos</h3>
     <button onclick="cambiarOjos('descarga (6)')">Ojos 1</button>
     <button onclick="cambiarOjos('descarga (7)')">Ojos 2</button>
     <button onclick="cambiarOjos('descarga (8)')">Ojos 3</button>

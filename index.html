@@ -1,70 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Avatar Builder</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=BBH+Sans+Bartle&family=Barrio&family=Borel&family=Delius+Swash+Caps&family=Eater&family=Fascinate+Inline&family=Honk&family=Major+Mono+Display&family=Manrope:wght@200..800&family=Michroma&family=Miltonian+Tattoo&family=Rubik+Bubbles&family=Yarndings+20&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Eater&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="header">
+    <h1>Customize your baby Pumpking</h1>
+  </div>
 
-<div class="header">
-    <h1 >Customize your baby Pumpking</h1>
-</div>
-
-
-<div class="avatar-container">
-
-  <!-- CONTENEDOR DEL AVATAR -->
-  <div class="avatar">
-    <div class="base-layer">
-      <img id="cara" class="layer" src="./imagenes/calabaza/Naranja.PNG">
+  <div class="avatar-container">
+    <!-- AVATAR -->
+    <div class="avatar" aria-label="avatar">
+      <img id="cara" class="layer layer-base" alt="cara" src="./imagenes/calabaza/Naranja.PNG" />
+      <img id="ojos" class="layer"       alt="ojos" src="./imagenes/ojos/descarga (6).svg" />
+      <img id="boca" class="layer"       alt="boca" src="./imagenes/boca/descarga (9).svg" />
+      <img id="sombrero" class="layer"   alt="sombrero" src="./imagenes/sombreros/witch-hat.PNG" />
     </div>
-    <div class="cara-features">
-    <img id="ojos" class="layer" src="./imagenes/ojos/descarga (6).svg">
-    <img id="boca" class="layer" src="./imagenes/boca/descarga (9).svg">
-    </div>
-    <div class="accesorios">
-      <img id="sombrero" class="layer" src="./imagenes/sombreros/witch-hat.PNG">
+
+    <!-- CONTROLES -->
+    <div class="controls">
+      <h3>Cara</h3>
+      <button onclick="cambiarCara('Naranja')">Cara 1</button>
+      <button onclick="cambiarCara('Azul')">Cara 2</button>
+      <button onclick="cambiarCara('Morado')">Cara 3</button>
+      <button onclick="cambiarCara('Verde')">Cara 4</button>
+
+      <h3>Ojos</h3>
+      <button onclick="cambiarOjos('descarga (6)')">Ojos 1</button>
+      <button onclick="cambiarOjos('descarga (7)')">Ojos 2</button>
+      <button onclick="cambiarOjos('descarga (8)')">Ojos 3</button>
+      
+
+      <h3>Boca</h3>
+      <button onclick="cambiarBoca('descarga (9)')">Boca 1</button>
+      <button onclick="cambiarBoca('descarga (10)')">Boca 2</button>
+      <button onclick="cambiarBoca('descarga (11)')">Boca 3</button>
+
+      <h3>Sombrero</h3>
+      <button onclick="cambiarSombrero('viking-hat')">Vikingo</button>
+      <button onclick="cambiarSombrero('txapela-hat')">Txapela</button>
+      <button onclick="cambiarSombrero('pirate-hat')">Pirata</button>
+      <button onclick="cambiarSombrero('cowboy-hat')">Vaquero</button>
+      <button onclick="cambiarSombrero('duende-hat')">Duende</button>
+      <button onclick="cambiarSombrero('witch-hat')">Bruja</button>
     </div>
   </div>
 
-  <!-- BOTONES DE CONTROL -->
-  <div class="controls">
-    
-    <h3>Cara</h3>
-    <button onclick="cambiarCara('Naranja')">Cara 1</button>
-    <button onclick="cambiarCara('Azul')">Cara 2</button>
-    <button onclick="cambiarCara('Morado')">Cara 3</button>
-    <button onclick="cambiarCara('Verde')">Cara 2</button>
-    
-
-
-    <h3 class="ojos">Ojos</h3>
-    <button onclick="cambiarOjos('descarga (6)')">Ojos 1</button>
-    <button onclick="cambiarOjos('descarga (7)')">Ojos 2</button>
-    <button onclick="cambiarOjos('descarga (8)')">Ojos 3</button>
-
-    <h3>Boca</h3>
-    <button onclick="cambiarBoca('descarga (9)')">Boca 1</button>
-    <button onclick="cambiarBoca('descarga (10)')">Boca 2</button>
-    <button onclick="cambiarBoca('descarga (11)')">Boca 3</button>
-   
-
-     <h3>Sombrero</h3>
-    <button onclick="cambiarSombrero('viking-hat')"> Vikingo </button>
-    <button onclick="cambiarSombrero('txapela-hat')">Txapela</button>
-    <button onclick="cambiarSombrero('pirate-hat')">Pirata</button>
-    <button onclick="cambiarSombrero('cowboy-hat')">Vaquero</button>
-    <button onclick="cambiarSombrero('duende-hat')">Duende </button>
-    <button onclick="cambiarSombrero('witch-hat')">Bruja</button>
-
-  </div>
-
-</div>
-
-<script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>

@@ -1,21 +1,25 @@
-let cara = document.querySelector('#cara');
-let ojos = document.querySelector('#ojos');
-let boca = document.querySelector('#boca');
-let sombrero = document.querySelector('#sombrero');
 
-const cambiarCara = (v) => {
-  cara.src = `./imagenes/calabaza/${v}.PNG`;
+const cara       = document.querySelector("#cara");
+const ojos       = document.querySelector("#ojos");
+const boca       = document.querySelector("#boca");
+const sombrero   = document.querySelector("#sombrero");
+
+
+const cambiarCara = (archivo) => {
+  cara.src = "./imagenes/calabaza/" + archivo + ".PNG";
 };
 
-const cambiarOjos = (v) => {
-  ojos.src = `./imagenes/ojos/${v}.svg`;
+
+const cambiarOjos = (archivo) => {
+  ojos.src = "./imagenes/ojos/" + archivo + ".svg";
 };
 
-const cambiarBoca = (v) => {
-  boca.src = `./imagenes/boca/${v}.svg`;
-  ;
+
+const cambiarBoca = (archivo) => {
+  boca.src = "./imagenes/boca/" + archivo + ".svg";
 };
 
-const cambiarSombrero = (v) => {
-  sombrero.src = `./imagenes/sombreros/${v}.PNG`;
+
+const cambiarSombrero = (archivo) => {
+  sombrero.src = "./imagenes/sombreros/" + archivo + ".PNG";
 };
